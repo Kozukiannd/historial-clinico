@@ -7,92 +7,141 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            margin: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2e6da4;
         }
         .section {
-            margin: 20px 0;
+            margin-bottom: 30px;
         }
-        .section-title {
+        label {
             font-weight: bold;
-            margin-bottom: 10px;
+            display: block;
+            margin-bottom: 5px;
         }
-        .field {
-            margin: 5px 0;
+        input[type="text"], input[type="date"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Expediente Clínico</h1>
+        <h2>Centro Médico Humberto Molina</h2>
+        <p>Clínica 207, Zona 3, Quetzaltenango</p>
+        <p>Citas al: 5466-1095</p>
 
-    <h1>Expediente Clínico</h1>
+        <div class="section">
+            <h2>Datos Personales</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
 
-    <div class="section">
-        <h2 class="section-title">Examen Físico</h2>
-        <div class="field">QUIRURGICOS: __________________________</div>
-        <div class="field">GESTAS: __________________________</div>
-        <div class="field"># PS: __________________________</div>
-        <div class="field">TRAUMATICOS: __________________________</div>
-        <div class="field">FUR: __________________________</div>
-        <div class="field">PAP: __________________________</div>
-        <div class="field">ALERGICOS: __________________________</div>
-        <div class="field">CICLOS: __________________________</div>
-        <div class="field">PF: __________________________</div>
-        <div class="field">VICIOS Y MANIAS: __________________________</div>
-        <div class="field">MENARCA: __________________________</div>
-        <div class="field">OTRO: __________________________</div>
-        <div class="field">FAMILIARES: __________________________</div>
-        <div class="field">IVSA: __________________________</div>
-        <div class="field">USG: __________________________</div>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad">
+
+            <label for="residencia">Residencia:</label>
+            <input type="text" id="residencia" name="residencia">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono">
+        </div>
+
+        <div class="section">
+            <h2>Motivo de Consulta</h2>
+            <textarea id="motivo" name="motivo" rows="4"></textarea>
+        </div>
+
+        <div class="section">
+            <h2>Historia de la Enfermedad Actual</h2>
+            <textarea id="historia" name="historia" rows="4"></textarea>
+        </div>
+
+        <div class="section">
+            <h2>Examen Físico</h2>
+
+            <label for="quirurgicos">Quirúrgicos:</label>
+            <input type="text" id="quirurgicos" name="quirurgicos">
+
+            <label for="gestas">Gestas:</label>
+            <input type="text" id="gestas" name="gestas">
+
+            <label for="ps"># PS:</label>
+            <input type="text" id="ps" name="ps">
+
+            <label for="traumaticos">Traumáticos:</label>
+            <input type="text" id="traumaticos" name="traumaticos">
+
+            <label for="fur">FUR:</label>
+            <input type="text" id="fur" name="fur">
+
+            <label for="pap">PAP:</label>
+            <input type="text" id="pap" name="pap">
+
+            <label for="alergicos">Alérgicos:</label>
+            <input type="text" id="alergicos" name="alergicos">
+
+            <label for="ciclos">Ciclos:</label>
+            <input type="text" id="ciclos" name="ciclos">
+
+            <label for="pf">PF:</label>
+            <input type="text" id="pf" name="pf">
+
+            <label for="vicios">Vicios y Manías:</label>
+            <input type="text" id="vicios" name="vicios">
+
+            <label for="menarca">Menarca:</label>
+            <input type="text" id="menarca" name="menarca">
+
+            <label for="familiar">Familiares:</label>
+            <input type="text" id="familiar" name="familiar">
+        </div>
+
+        <div class="section">
+            <h2>Signos Vitales</h2>
+            <label for="temperatura">Temperatura:</label>
+            <input type="text" id="temperatura" name="temperatura">
+
+            <label for="presion">Presión Arterial:</label>
+            <input type="text" id="presion" name="presion">
+
+            <label for="fc">Frecuencia Cardiaca:</label>
+            <input type="text" id="fc" name="fc">
+
+            <label for="fr">Frecuencia Respiratoria:</label>
+            <input type="text" id="fr" name="fr">
+
+            <label for="saturacion">Saturación:</label>
+            <input type="text" id="saturacion" name="saturacion">
+        </div>
+
+        <div class="section">
+            <h2>Impresión Clínica y Planes</h2>
+            <label for="impresion">Impresión Clínica:</label>
+            <textarea id="impresion" name="impresion" rows="4"></textarea>
+
+            <label for="plan_diagnostico">Plan Diagnóstico:</label>
+            <textarea id="plan_diagnostico" name="plan_diagnostico" rows="4"></textarea>
+
+            <label for="plan_terapeutico">Plan Terapéutico:</label>
+            <textarea id="plan_terapeutico" name="plan_terapeutico" rows="4"></textarea>
+
+            <label for="nuevos_datos">Nuevos Datos:</label>
+            <textarea id="nuevos_datos" name="nuevos_datos" rows="4"></textarea>
+        </div>
     </div>
-
-    <div class="section">
-        <h2 class="section-title">Ginecológicos</h2>
-        <div class="field">Nombre: __________________________</div>
-        <div class="field">Edad: __________________________</div>
-        <div class="field">Residencia: __________________________</div>
-        <div class="field">Teléfono: __________________________</div>
-        <div class="field">Descripción: __________________________</div>
-        <div class="field">Fecha: __________________________</div>
-        <div class="field">Motivo de consulta: __________________________</div>
-        <div class="field">Historia de la enfermedad actual: __________________________</div>
-        <div class="field">Antecedentes: __________________________</div>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Signos Vitales</h2>
-        <div class="field">Temperatura: __________________________</div>
-        <div class="field">Presión arterial: __________________________</div>
-        <div class="field">Frecuencia cardiaca: __________________________</div>
-        <div class="field">Frecuencia respiratoria: __________________________</div>
-        <div class="field">Saturación: __________________________</div>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Examen Neurológico</h2>
-        <div class="field">NEUROLÓGICO: __________________________</div>
-        <div class="field">CARDIOPULMONAR: __________________________</div>
-        <div class="field">ABDOMEN: __________________________</div>
-        <div class="field">GINECOLÓGICO: __________________________</div>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Impresión Clínica</h2>
-        <div class="field">Impresión clínica: __________________________</div>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Plan</h2>
-        <div class="field">Plan Diagnóstico: __________________________</div>
-        <div class="field">Plan Terapéutico: __________________________</div>
-        <div class="field">Nuevos Datos: __________________________</div>
-        <div class="field">Resumen: __________________________</div>
-    </div>
-
-    <footer>
-        <p>Centro Médico Humberto Molina</p>
-        <p>Clínica 207</p>
-        <p>Zona 3, Quetzaltenango</p>
-        <p>Citas al 5466-1095</p>
-    </footer>
-
 </body>
 </html>
+
