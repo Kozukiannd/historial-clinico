@@ -76,6 +76,27 @@
         .search-container button:hover {
             background-color: #204d74;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #2e6da4;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -94,7 +115,6 @@
         <!-- Datos Personales -->
         <div class="section">
             <h2 style="color:#2c3e50;">Datos Personales</h2>
-
             <label for="nombre" style="color:#2980b9;">Nombre:</label>
             <input type="text" id="nombre" name="nombre" style="background-color:#ecf0f1;">
 
@@ -108,77 +128,78 @@
             <input type="text" id="telefono" name="telefono" style="background-color:#ecf0f1;">
         </div>
 
-        <!-- Motivo de Consulta -->
-        <div class="section">
-            <h2 style="color:#2c3e50;">Motivo de Consulta</h2>
-            <textarea id="motivo" name="motivo" rows="4" style="background-color:#ecf0f1;"></textarea>
-        </div>
-
-        <!-- Historia de la Enfermedad Actual -->
-        <div class="section">
-            <h2 style="color:#2c3e50;">Historia de la Enfermedad Actual</h2>
-            <textarea id="historia" name="historia" rows="4" style="background-color:#ecf0f1;"></textarea>
-        </div>
-
         <!-- Examen Físico -->
         <div class="section">
             <h2 style="color:#2c3e50;">Examen Físico</h2>
 
-            <label for="quirurgicos" style="color:#2980b9;">Quirúrgicos:</label>
-            <input type="text" id="quirurgicos" name="quirurgicos" style="background-color:#ecf0f1;">
-
-            <label for="gestas" style="color:#2980b9;">Gestas:</label>
-            <input type="text" id="gestas" name="gestas" style="background-color:#ecf0f1;">
-
-            <label for="ps" style="color:#2980b9;"># PS:</label>
-            <input type="text" id="ps" name="ps" style="background-color:#ecf0f1;">
-
-            <label for="traumaticos" style="color:#2980b9;">Traumáticos:</label>
-            <input type="text" id="traumaticos" name="traumaticos" style="background-color:#ecf0f1;">
-
-            <label for="fur" style="color:#2980b9;">FUR:</label>
-            <input type="text" id="fur" name="fur" style="background-color:#ecf0f1;">
-
-            <label for="pap" style="color:#2980b9;">PAP:</label>
-            <input type="text" id="pap" name="pap" style="background-color:#ecf0f1;">
-
-            <label for="alergicos" style="color:#2980b9;">Alérgicos:</label>
-            <input type="text" id="alergicos" name="alergicos" style="background-color:#ecf0f1;">
-
-            <label for="ciclos" style="color:#2980b9;">Ciclos:</label>
-            <input type="text" id="ciclos" name="ciclos" style="background-color:#ecf0f1;">
-
-            <label for="pf" style="color:#2980b9;">PF:</label>
-            <input type="text" id="pf" name="pf" style="background-color:#ecf0f1;">
-
-            <label for="vicios" style="color:#2980b9;">Vicios y Manías:</label>
-            <input type="text" id="vicios" name="vicios" style="background-color:#ecf0f1;">
-
-            <label for="menarca" style="color:#2980b9;">Menarca:</label>
-            <input type="text" id="menarca" name="menarca" style="background-color:#ecf0f1;">
-
-            <label for="familiar" style="color:#2980b9;">Familiares:</label>
-            <input type="text" id="familiar" name="familiar" style="background-color:#ecf0f1;">
+            <table>
+                <tr>
+                    <th>Quirúrgicos</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Gestas</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th># PS</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Traumáticos</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>FUR</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>PAP</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>Alérgicos</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Ciclos</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>PF</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Vicios y Manías</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>Menarca</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Familiares</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>IVSA</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>USG</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+            </table>
         </div>
 
         <!-- Signos Vitales -->
         <div class="section">
             <h2 style="color:#2c3e50;">Signos Vitales</h2>
 
-            <label for="temperatura" style="color:#2980b9;">Temperatura:</label>
-            <input type="text" id="temperatura" name="temperatura" style="background-color:#ecf0f1;">
-
-            <label for="presion" style="color:#2980b9;">Presión Arterial:</label>
-            <input type="text" id="presion" name="presion" style="background-color:#ecf0f1;">
-
-            <label for="fc" style="color:#2980b9;">Frecuencia Cardiaca:</label>
-            <input type="text" id="fc" name="fc" style="background-color:#ecf0f1;">
-
-            <label for="fr" style="color:#2980b9;">Frecuencia Respiratoria:</label>
-            <input type="text" id="fr" name="fr" style="background-color:#ecf0f1;">
-
-            <label for="saturacion" style="color:#2980b9;">Saturación:</label>
-            <input type="text" id="saturacion" name="saturacion" style="background-color:#ecf0f1;">
+            <table>
+                <tr>
+                    <th>Temperatura</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Presión Arterial</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>Frecuencia Cardiaca</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                    <th>Frecuencia Respiratoria</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+                <tr>
+                    <th>Saturación</th>
+                    <td><input type="text" style="width:100%; background-color:#ecf0f1;"></td>
+                </tr>
+            </table>
         </div>
 
         <!-- Impresión Clínica y Planes -->
@@ -200,5 +221,6 @@
     </div>
 </body>
 </html>
+
 
 
