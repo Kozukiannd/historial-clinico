@@ -18,11 +18,27 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            position: relative;
         }
 
         h1, h2 {
             text-align: center;
             color: #716467;
+        }
+
+        h1 {
+            margin-left: 150px; /* Para que el título se alinee a la derecha del logo */
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            max-width: 120px;
+            height: auto;
         }
 
         .section {
@@ -78,16 +94,6 @@
 
         .search-container button:hover {
             background-color: #564e5a;
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .logo img {
-            max-width: 150px;
-            height: auto;
         }
 
         table {
@@ -239,6 +245,7 @@
     </div>
 </body>
 </html>
+
 
 
 
