@@ -116,6 +116,26 @@
             background-color: #fae8e1;
             color: #000;
         }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            background-color: #716467;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .buttons button:hover {
+            background-color: #564e5a;
+        }
     </style>
 </head>
 <body>
@@ -242,9 +262,16 @@
             <label for="nuevos_datos">Nuevos Datos:</label>
             <textarea id="nuevos_datos" name="nuevos_datos" rows="4"></textarea>
         </div>
+
+        <!-- Botones Guardar y Control Prenatal -->
+        <div class="buttons">
+            <button type="button">Guardar Datos</button>
+            <button type="button">Abrir Control Prenatal</button>
+        </div>
     </div>
 </body>
 </html>
+
 
 
 
